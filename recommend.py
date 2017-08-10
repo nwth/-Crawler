@@ -101,7 +101,7 @@ class Recommend(object):
                 rank[j] += interest * wj
         #按照兴趣度排序，返回推荐书籍的urls
         sorted_rank = sorted(rank.iteritems(), key=operator.itemgetter(1), reverse=True)[0:10]          
-        print 'sorted:\n', sorted_rank
+        print ('sorted:\n', sorted_rank)
         res = []
         for i in sorted_rank:
             res.append(i[0])
