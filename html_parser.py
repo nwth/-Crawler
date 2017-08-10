@@ -1,9 +1,5 @@
 # coding=utf-8
-'''
-Created on 2016/4/3
- @author: moverzp
- description: 
-'''
+
 from bs4 import BeautifulSoup
 import re, html_downloader
 
