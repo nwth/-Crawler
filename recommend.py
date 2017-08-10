@@ -1,8 +1,6 @@
 # coding=utf-8
 '''
-Created on 2016年6月20日
- @author: moverzp
- description: 推荐算法实现
+推荐算法实现
 '''
 import mongoDB, math, pickle, time
 from collections import defaultdict #可以直接使用下标访问二维字典不存在的元素
@@ -82,9 +80,7 @@ class Recommend(object):
         self._cal_matrix_W()
         print ('save matrix...')
         self._save_matrix_w()
-        
-    
-        
+                    
     #基于物品的协同过滤算法，输入为书本的urls，返回推荐的urls
     def itemCF(self, urls):
         rank = dict() #保存推荐的url及其对应的兴趣度
