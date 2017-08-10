@@ -1,8 +1,6 @@
 #-*-coding:UTF-8-*-
 '''
-Created on 2016年4月27日
- @author: moverzp
- description: mongoDB相关的操作，替代原先的url管理器和html输出器
+mongoDB相关的操作，替代原先的url管理器和html输出器
 '''
 #import sys
 import pymongo
@@ -83,9 +81,7 @@ class MongoDB(object):
             ws.write( row, 5, data['url'] )
             row += 1
         w.save('GoodBooks.xls') #保存
-        
-    ###############################################################################
-    #与qt_gui来往的方法
+ 
     def search_book(self, keyword):
         doc = self.bookCol.find({'bookName': {'$regex': ".*"+ str(keyword) + ".*"}}) #str()将QString转为string
         return doc
