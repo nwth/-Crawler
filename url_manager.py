@@ -1,9 +1,4 @@
 # coding=utf-8
-'''
-Created on 2016/4/3
- 
-@author: Administrator
-'''
 
 class UrlManager(object):
     def __init__(self):
