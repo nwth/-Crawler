@@ -50,19 +50,3 @@ if __name__ == "__main__":
     #obj_spider.mongodb.output_xls() #以xls格式输出爬取结果
     print ('All down!')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
